@@ -1,0 +1,152 @@
+/* -----------
+Text
+------------ */
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    min-height: 100%;
+    background-color: rgb(107, 41, 15);
+    color: rgb(34, 13, 5);
+    font-family: Raleway, sans-serif;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+p {
+    font-size: 1.2rem;
+    font-family: "Source Sans Pro", sans-serif !important;
+}
+
+.figure-caption {
+    color: black !important;
+}
+
+/* --------
+Containers & Spacing
+-------- */
+
+.p-content {
+    width: 90%;
+    margin-top: 1rem !important;
+    margin: auto;
+    padding: 6% 8% 5% 8%;
+    background-color: #f8e0ff;
+    border-radius: 1.5rem;
+}
+
+.header {
+    background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F3165613.jpg&f=1&nofb=1") fixed;
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.header-text-fit {
+    width: fit-content;
+    display: table;
+    margin: auto;
+}
+
+.header-text-bg {
+    background-color: rgba(32, 25, 20, 0.493);
+    width: fit-content;
+    display: table;
+    margin: auto;
+    padding: 1em;
+}
+
+.jumbotron-transparent {
+    background-color: rgba(19, 25, 37, 0);
+    border-radius: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    padding-left: 1rem;
+    padding: 2rem;
+}
+
+.pr-6 {
+    padding-right: 5rem !important;
+}
+
+.pt-6 {
+    padding-top: 12rem !important;
+}
+
+
+/* -------
+Other content
+------- */
+
+#rps-reset {
+    display: none;
+    transition: display 0.3s;
+}
+
+hr {
+    width: 95%;
+    margin: auto;
+}
+
+
+/* ------------
+Navbar
+------------ */
+
+.navbar-brand {
+    font-weight: 300;
+    padding-top: 2px !important;
+}
+
+.nav-item {
+    font-weight: 200;
+    font-size: 1.1rem !important;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-transgrey {
+    background-color: rgba(29, 14, 12, 0.74);
+}
+
+.navbar-brand {
+    font-size: 1.4rem !important;
+}
+
+a.nav-link {
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 400ms;
+    position: relative;
+}
+
+a.nav-link::after {
+  position: absolute;
+  content: "";
+  background: white;
+  height: .05rem;
+  width: 100%;
+  top: 90%;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+  display: block;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
