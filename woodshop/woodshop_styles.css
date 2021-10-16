@@ -1,3 +1,20 @@
+/* --------
+Index image links
+-------- */
+
+.link-white, .link-white:hover {
+    color: white;
+}
+
+.image-dark-overlay {
+    background-color: rgba(0, 0, 0, 0.479);
+    transition: 0.5s;
+}
+
+.image-dark-overlay:hover{
+    background-color: rgba(104, 104, 104, 0.342);
+}
+
 /* -----------
 Text
 ------------ */
@@ -26,6 +43,7 @@ p {
 .figure-caption {
     color: black !important;
 }
+
 
 /* --------
 Containers & Spacing
@@ -99,7 +117,6 @@ hr {
     width: 95%;
     margin: auto;
 }
-
 
 /* ------------
 Navbar
