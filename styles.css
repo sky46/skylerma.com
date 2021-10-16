@@ -109,13 +109,13 @@ Navbar
     font-size: 1.4rem !important;
 }
 
-a.nav-link {
+.nav-hover-underline {
     border-bottom: 1px solid transparent;
     transition: border-bottom 400ms;
     position: relative;
 }
 
-a.nav-link::after {
+.nav-hover-underline::after {
   position: absolute;
   content: "";
   background: white;
@@ -127,7 +127,7 @@ a.nav-link::after {
   transform: scaleX(0);
   transition: transform 0.3s;
   display: block;
-}
+} 
 
 .nav-link:hover::after {
   transform: scaleX(1);
