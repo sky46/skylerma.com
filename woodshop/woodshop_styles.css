@@ -54,7 +54,7 @@ Containers & Spacing
     margin-top: 1rem !important;
     margin: auto;
     padding: 6% 8% 5% 8%;
-    background-color: #f8e0ff;
+    background-color: #f9f1ff;
     border-radius: 1.5rem;
 }
 
@@ -144,13 +144,13 @@ Navbar
     font-size: 1.4rem !important;
 }
 
-a.nav-link {
+.nav-hover-underline {
     border-bottom: 1px solid transparent;
     transition: border-bottom 400ms;
     position: relative;
 }
 
-a.nav-link::after {
+.nav-hover-underline::after {
   position: absolute;
   content: "";
   background: white;
@@ -162,8 +162,26 @@ a.nav-link::after {
   transform: scaleX(0);
   transition: transform 0.3s;
   display: block;
+} 
+
+.nav-hover-underline:hover::after {
+  transform: scaleX(1);
 }
 
-.nav-link:hover::after {
-  transform: scaleX(1);
+.dropdown-menu.show {
+    background-color: rgba(31, 17, 15, 0.61);
+}
+
+.dropdown-item {
+    color: white;
+    font-weight: 200;
+}
+
+.dropdown-item:hover {
+    background-color:rgba(105, 86, 82, 0.61);
+    color: white;
+}
+
+.dropdown-item.active {
+    background-color: rgba(136, 108, 104, 0.726)
 }
