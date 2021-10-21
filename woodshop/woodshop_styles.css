@@ -29,6 +29,25 @@ Accordion
     background-color: rgb(237, 236, 255);
 }
 
+/* -------------------
+Carousel
+--------------- */
+.carousel-control-prev, .carousel-control-next {
+    background-color: rgba(32, 25, 20, 0);
+    border: none;
+}
+
+.carousel-item{
+    width: 100%; /*width you want*/
+    height: 500px; /*height you want*/
+    overflow: hidden;
+}
+.carousel-item img{
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+
 /* -----------
 Text
 ------------ */
