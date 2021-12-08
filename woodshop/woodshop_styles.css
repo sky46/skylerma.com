@@ -232,3 +232,7 @@ Navbar
 .dropdown-item.active {
     background-color: rgba(136, 108, 104, 0.726)
 }
+
+.height-250-px {
+    height: 250px;
+}
