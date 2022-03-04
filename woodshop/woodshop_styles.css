@@ -56,7 +56,7 @@ Images
 
 .img-production {
     width: 80%;
-} 
+}
 
 
 /* -----------
@@ -81,7 +81,8 @@ h3 {
 
 p, ol {
     font-size: 1.2em;
-    font-family: "Source Sans Pro", sans-serif !important;
+    font-family: "Red Hat Text", sans-serif !important;
+    font-weight: 300;
 }
 
 .figure-caption {
@@ -98,11 +99,11 @@ Containers & Spacing
 
 .p-content {
     width: 90%;
-    margin-top: 1rem !important;
+    margin-top: 1.2rem !important;
     margin: auto;
     padding: 6% 8% 2% 8%;
     background-color: #f9f1ff;
-    border-radius: 1.5rem;
+    border-radius: 0.7rem;
 }
 
 .header {
