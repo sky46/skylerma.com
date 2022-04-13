@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <link href="{% link assets/css/main.scss %}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Remove unused font weights when finished with website! -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Red+Hat+Text:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <script defer src="{% link assets/js/navbar.js %}"></script>
+    <title>{{ page.title }}</title>
+
+  </head>
+
+  <body>
+    <nav class="navbar" id="navbar">
+      <button class="nav-toggle" id="nav-toggle">
+        <span class="material-icons md-light md-24">menu</span>
+      </button>
+      <a class="nav-title" href="{% link newindex.html %}">Skyler</a>
+      <div class="nav-links-div">
+        <a class="nav-link" href="#1">Home</a>
+        <a class="nav-link" href="#2">Link</a>
+        <a class="nav-link" href="#3">Cool</a>
+        <a class="nav-link" href="#4">Thing</a>
+        <a class="nav-link" href="#5">Foo</a>
+        <a class="nav-link" href="#6">Bar</a>
+      </div>
+    </nav>
+
+    <main>
+      {{ page.content }}
+    </main>
+  </body>
+</html>
