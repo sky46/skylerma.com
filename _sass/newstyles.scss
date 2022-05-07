@@ -55,15 +55,20 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     padding: 0.2rem 0.5rem;
     margin-right: 1.3rem;
+
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         background: none;
         color:rgb(187, 224, 255);
      }
+
     background: linear-gradient(to right, rgb(215, 155, 255), rgb(136, 207, 255), rgb(215, 155, 255));
     background-size: 200%;
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
     border: 2px solid transparent;
+
     &:hover {
         animation: textHover 1.5s linear infinite;
         border-image: linear-gradient(to bottom right, rgb(209, 139, 255), rgb(109, 185, 255)) 1;
@@ -88,9 +93,11 @@ h1, h2, h3, h4, h5, h6 {
 
     background: linear-gradient(rgb(173, 255, 234), rgb(194, 233, 255), rgb(176, 190, 255));
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
     border: 2px solid transparent;
+
     &.active {
         border-image: linear-gradient(to bottom right, rgb(71, 89, 122), rgb(85, 62, 98)) 1;
     }
@@ -327,6 +334,7 @@ h1, h2, h3, h4, h5, h6 {
     &.md-toggle {
         background: linear-gradient(to bottom right, rgb(243, 219, 255), rgb(200, 211, 255), rgb(188, 255, 255));
         background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
