@@ -9,10 +9,24 @@ body {
 
 main {
     font-family: "Red Hat Text", sans-serif;
-    color:rgb(241, 241, 255);
+    color: rgb(233, 232, 255);
     margin: 8rem 10% 3rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    @media screen and (max-width: 800px) {
+        font-size: 1.1rem;
+    }
 }
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+    p {
+        line-height: 150%;
+        @media screen and (max-width: 800px) {
+            line-height: 170%;
+        }
+    }
 
 
 // Navbar
@@ -77,6 +91,9 @@ main {
     -webkit-text-fill-color: transparent;
     
     border: 2px solid transparent;
+    &.active {
+        border-image: linear-gradient(to bottom right, rgb(71, 89, 122), rgb(85, 62, 98)) 1;
+    }
     &:hover {
         border-image: linear-gradient(rgb(173, 255, 234), rgb(194, 233, 255), rgb(176, 190, 255)) 1;
     }
@@ -87,13 +104,14 @@ main {
 .nav-toggle {
     display: none;
     background: transparent;
-    border: none;
+    border: 2px transparent;
     cursor: pointer;
-    margin: 0.5rem;
+    margin: 0.2rem;
+    border: 2px solid transparent;
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .navbar {
         transition: max-height 0.8s ease;
     }
@@ -119,20 +137,174 @@ main {
             max-height: 17rem;
         }
     }
-
     .nav-toggle {
         float: right;
         display: block;
+        border: 2px solid rgb(27,27,58);
+        &:hover {
+            border-image: linear-gradient(to bottom right, rgb(243, 219, 255), rgb(200, 211, 255), rgb(188, 255, 255)) 1;
+        }
     }
 }
 
 
 // Index Body Content
 
-.hi-title {
-    font-size: 4rem;
-    font-weight: 600;
+.intro-title {
+    font-size: 8rem;
+    font-weight: 400;
+    margin: 0;
+    line-height: 110%;
+    background: linear-gradient(to bottom right, rgb(255, 158, 103), rgb(240, 165, 255) 40%, rgb(1, 200, 255) 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+.intro-text {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+.intro-div {
+    padding: 2rem 3rem;
+    width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+    .intro-title {
+        font-size: 5rem;
+    }
+    .intro-text {
+        font-size: 1.5rem;
+    }
+    .intro-div {
+        padding: 1rem 1.5rem;
+        width: 95%;
+    }
+}
+
+
+
+// Music
+
+.music-title-div {
+    padding: 5%;
+    margin-bottom: 3rem;
+    background-color: rgb(31, 28, 44);
+
+    h1 {
+        font-size: 5rem;
+        font-weight: 500;
+        background: linear-gradient(rgb(161, 158, 255), rgb(255, 164, 202), rgb(255, 228, 158));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 0.7rem;
+    }
+    h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        color: rgb(241, 225, 255);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .music-title-div {
+        padding: 8%;
+
+        h1 {
+            font-size: 4.7rem;
+            line-height: 110%;
+        }
+        h2 {
+            font-size: 1.7rem;
+            line-height: 150%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .music-title-div {
+        h1 {
+            font-size: 4rem;
+        }
+        h2 {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+
+
+// About
+
+.about-title-div {
+    padding: 5%;
+    margin-bottom: 3rem;
+    background-color: rgb(31, 28, 44);
+
+    h1 {
+        font-size: 5rem;
+        font-weight: 500;
+        background: linear-gradient(rgb(197, 158, 255), rgb(164, 205, 255), rgb(158, 255, 181));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 0.7rem;
+    }
+    h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        color: rgb(241, 225, 255);
+    }
+
+    @media screen and (max-width: 1200px) {
+        padding: 8%;
+        h1 {
+            font-size: 4rem;
+            line-height: 110%;
+        }
+        h2 {
+            font-size: 1.7rem;
+            line-height: 150%;
+        }
+    }
+    
+    @media screen and (max-width: 1000px) {
+        h1 {
+            font-size: 3.2rem;
+            line-height: 110%;
+        }
+        h2 {
+            font-size: 1.5rem;
+            line-height: 150%;
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        h1 {
+            font-size: 4rem;
+            line-height: 110%;
+        }
+        h2 {
+            font-size: 1.5rem;
+            line-height: 150%;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        padding: 12%;
+        h1 {
+            font-size: 3rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+
 
 
 // Material Icons
@@ -151,4 +323,10 @@ main {
     /* Rules for using icons as white on a dark background. */
     &.md-light { color: rgba(255, 255, 255, 1); }
     &.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+    &.md-toggle {
+        background: linear-gradient(to bottom right, rgb(243, 219, 255), rgb(200, 211, 255), rgb(188, 255, 255));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }

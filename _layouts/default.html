@@ -19,16 +19,13 @@
   <body>
     <nav class="navbar" id="navbar">
       <button class="nav-toggle" id="nav-toggle">
-        <span class="material-icons md-light md-24">menu</span>
+        <span class="material-icons md-toggle md-36">menu</span>
       </button>
-      <a class="nav-title" href="{% link newindex.html %}">Skyler</a>
+      <a class="nav-title" href="{% link index.html %}">Skyler</a>
       <div class="nav-links-div">
-        <a class="nav-link" href="#1">Home</a>
-        <a class="nav-link" href="#2">Link</a>
-        <a class="nav-link" href="#3">Cool</a>
-        <a class="nav-link" href="#4">Thing</a>
-        <a class="nav-link" href="#5">Foo</a>
-        <a class="nav-link" href="#6">Bar</a>
+        <a class="nav-link{% if page.name == 'index.html' %} active{% endif %}" href="{% link index.html %}">Home</a>
+        <a class="nav-link{% if page.name == 'about.html' %} active{% endif %}" href="{% link about.html %}">About</a>
+        <a class="nav-link{% if page.name == 'music.html' %} active{% endif %}" href="{% link music.html %}">Music</a>
       </div>
     </nav>
 
