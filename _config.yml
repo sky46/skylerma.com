@@ -4,3 +4,8 @@ defaults:
       path: ""
     values:
       layout: "default"
+  -
+    scope:
+      path: "woodshop"
+    values:
+      layout: "woodshop"

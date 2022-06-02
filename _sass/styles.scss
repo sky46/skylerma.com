@@ -157,6 +157,12 @@ h1, h2, h3, h4, h5, h6 {
 
 // Index Body Content
 
+.intro-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+}
+
 .intro-title {
     font-size: 8rem;
     font-weight: 400;
@@ -173,9 +179,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1.5rem;
 }
 
-.intro-div {
-    padding: 2rem 3rem;
-    width: 50%;
+.intro-text-div {
+    flex-basis: 48%;
+    padding-top: 2rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -185,12 +191,26 @@ h1, h2, h3, h4, h5, h6 {
     .intro-text {
         font-size: 1.5rem;
     }
-    .intro-div {
-        padding: 1rem 1.5rem;
+    .intro-text-div {
+        padding-top: 1rem;
         width: 95%;
     }
 }
 
+.intro-img {
+    flex-basis: 48%;
+    padding-top: 2rem;
+    > figure {
+        > img {
+            width: 100%;
+        }
+        > figcaption {
+            margin-top: 0.5rem;
+            text-align: center;
+            font-style: italic;
+        }
+    }
+}
 
 
 // Music
