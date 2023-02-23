@@ -9,6 +9,3 @@ defaults:
       path: "woodshop"
     values:
       layout: "woodshop"
-
-plugins:
-  - jekyll-redirect-from
