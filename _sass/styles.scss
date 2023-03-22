@@ -1,4 +1,8 @@
+// #########################################################
+
 // General
+
+// ######################################################
 
 body {
     margin: 0;
@@ -32,7 +36,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+// #########################################################
+
 // Navbar
+
+// ######################################################
 
 .navbar {
     padding: 1.2rem 2.5rem;
@@ -109,7 +117,12 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+
+// #########################################################
+
 // Responsive Navbar
+
+// ######################################################
 
 .nav-toggle {
     display: none;
@@ -158,7 +171,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+// #########################################################
+
 // Footer
+
+// ######################################################
 
 .footer-div {
     padding: 1.2rem;
@@ -172,7 +189,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+// #########################################################
+
 // Index Body Content
+
+// ######################################################
 
 .intro-div {
     display: flex;
@@ -236,58 +257,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-// Music
-
-.music-title-div {
-    padding: 5%;
-    margin-bottom: 3rem;
-    background-color: rgb(31, 28, 44);
-
-    h1 {
-        font-size: 5rem;
-        font-weight: 500;
-        background: linear-gradient(rgb(161, 158, 255), rgb(255, 164, 202), rgb(255, 228, 158));
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 0.7rem;
-    }
-    h2 {
-        font-size: 2rem;
-        font-weight: 400;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .music-title-div {
-        padding: 8%;
-
-        h1 {
-            font-size: 4.7rem;
-            line-height: 110%;
-        }
-        h2 {
-            font-size: 1.7rem;
-            line-height: 150%;
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .music-title-div {
-        h1 {
-            font-size: 4rem;
-        }
-        h2 {
-            font-size: 1.4rem;
-        }
-    }
-}
-
-
+// #########################################################
 
 // About
+
+// ######################################################
 
 .about-title-div {
     padding: 5%;
@@ -353,10 +327,81 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.video-games-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-games-list {
+    list-style: none;
+}
+
+.video-game-box {
+    border: 2px solid white;
+    flex-basis: 19%;
+    padding: 2rem 0;
+    text-align: center;
+}
 
 
+// #########################################################
+
+// Music
+
+// ######################################################
+
+.music-title-div {
+    padding: 5%;
+    margin-bottom: 3rem;
+    background-color: rgb(31, 28, 44);
+
+    h1 {
+        font-size: 5rem;
+        font-weight: 500;
+        background: linear-gradient(rgb(161, 158, 255), rgb(255, 164, 202), rgb(255, 228, 158));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 0.7rem;
+    }
+    h2 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .music-title-div {
+        padding: 8%;
+
+        h1 {
+            font-size: 4.7rem;
+            line-height: 110%;
+        }
+        h2 {
+            font-size: 1.7rem;
+            line-height: 150%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .music-title-div {
+        h1 {
+            font-size: 4rem;
+        }
+        h2 {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+
+// #########################################################
 
 // Material Icons
+
+// ######################################################
 
 .material-icons {
     /* Rules for sizing the icon. */
