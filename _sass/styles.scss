@@ -259,72 +259,86 @@ h1, h2, h3, h4, h5, h6 {
 
 // #########################################################
 
+// Topic Pages (About, Music, Projects)
+
+// ######################################################
+
+.topic-heading-div {
+    padding: 5%;
+    margin-bottom: 3rem;
+    background-color: rgb(31,28,44);
+}
+
+.topic-heading {
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+}
+
+.topic-subheading {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1200px) {
+    .topic-heading-div {
+        padding: 8%;
+    }
+    .topic-heading {
+        font-size: 4rem;
+        line-height: 110%;
+    }
+    .topic-subheading {
+        font-size: 1.7rem;
+        line-height: 150%;
+    }
+}
+    
+@media screen and (max-width: 1000px) {
+    .topic-heading {
+        font-size: 3.2rem;
+        line-height: 110%;
+    }
+    .topic-subheading {
+        font-size: 1.5rem;
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .topic-heading {
+        font-size: 4rem;
+        line-height: 110%;
+    }
+    .topic-subheading {
+        font-size: 1.5rem;
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topic-heading-div {
+        padding: 12%;
+    }
+    .topic-heading {
+        font-size: 3rem;
+    }
+    .topic-subheading {
+        font-size: 1.2rem;
+    }
+}
+
+// #########################################################
+
 // About
 
 // ######################################################
 
-.about-title-div {
-    padding: 5%;
-    margin-bottom: 3rem;
-    background-color: rgb(31, 28, 44);
-
-    h1 {
-        font-size: 5rem;
-        font-weight: 500;
-        background: linear-gradient(rgb(197, 158, 255), rgb(164, 205, 255), rgb(158, 255, 181));
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 0.7rem;
-    }
-    h2 {
-        font-size: 2rem;
-        font-weight: 400;
-    }
-
-    @media screen and (max-width: 1200px) {
-        padding: 8%;
-        h1 {
-            font-size: 4rem;
-            line-height: 110%;
-        }
-        h2 {
-            font-size: 1.7rem;
-            line-height: 150%;
-        }
-    }
-    
-    @media screen and (max-width: 1000px) {
-        h1 {
-            font-size: 3.2rem;
-            line-height: 110%;
-        }
-        h2 {
-            font-size: 1.5rem;
-            line-height: 150%;
-        }
-    }
-    
-    @media screen and (max-width: 800px) {
-        h1 {
-            font-size: 4rem;
-            line-height: 110%;
-        }
-        h2 {
-            font-size: 1.5rem;
-            line-height: 150%;
-        }
-    }
-    
-    @media screen and (max-width: 600px) {
-        padding: 12%;
-        h1 {
-            font-size: 3rem;
-        }
-        h2 {
-            font-size: 1.2rem;
-        }
-    }
+.about-heading {
+    background: linear-gradient(rgb(197, 158, 255), rgb(164, 205, 255), rgb(158, 255, 181));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 // .video-games-div {
@@ -349,50 +363,11 @@ h1, h2, h3, h4, h5, h6 {
 
 // ######################################################
 
-.music-title-div {
-    padding: 5%;
-    margin-bottom: 3rem;
-    background-color: rgb(31, 28, 44);
-
-    h1 {
-        font-size: 5rem;
-        font-weight: 500;
-        background: linear-gradient(rgb(161, 158, 255), rgb(255, 164, 202), rgb(255, 228, 158));
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 0.7rem;
-    }
-    h2 {
-        font-size: 2rem;
-        font-weight: 400;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .music-title-div {
-        padding: 8%;
-
-        h1 {
-            font-size: 4.7rem;
-            line-height: 110%;
-        }
-        h2 {
-            font-size: 1.7rem;
-            line-height: 150%;
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .music-title-div {
-        h1 {
-            font-size: 4rem;
-        }
-        h2 {
-            font-size: 1.4rem;
-        }
-    }
+.music-heading {
+    background: linear-gradient(rgb(161, 158, 255), rgb(255, 164, 202), rgb(255, 228, 158));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
