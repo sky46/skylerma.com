@@ -371,6 +371,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.music-recordings-div {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1000px) {
+    .music-recordings-div {
+        flex-direction: column;
+    }
+}
+
+.music-video-div {
+    flex-grow: 1;
+    display: flex;
+}
+
+.music-video {
+    flex-grow: 1;
+    aspect-ratio: 16 / 9;
+}
+
+
 // #########################################################
 
 // Material Icons
