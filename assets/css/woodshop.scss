@@ -1,0 +1,239 @@
+/* --------
+Index image links
+-------- */
+
+.link-white, .link-white:hover {
+    color: white;
+}
+
+.image-dark-overlay {
+    background-color: rgba(0, 0, 0, 0.479);
+    transition: 0.5s;
+}
+
+.image-dark-overlay:hover{
+    background-color: rgba(104, 104, 104, 0.342);
+}
+
+/* ----------
+Accordion   
+------------*/
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 .25rem rgba(86, 104, 204, 0.25);
+    color: rgb(31, 17, 100);
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgb(31, 17, 100);
+    background-color: rgb(237, 236, 255);
+}
+
+/* -------------------
+Carousel
+--------------- */
+.carousel-control-prev, .carousel-control-next {
+    background-color: rgba(32, 25, 20, 0);
+    border: none;
+}
+
+.carousel-research {
+    width: 100%;
+    overflow: hidden;
+    height: 450px;
+}
+
+.carousel-research img {
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+}
+
+
+/* -------
+Images 
+------- */
+
+.img-production {
+    width: 80%;
+}
+
+
+/* -----------
+Text
+------------ */
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    min-height: 100%;
+    background-color: rgb(107, 41, 15);
+    color: rgb(34, 13, 5);
+    font-family: Raleway, sans-serif;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+p, ol {
+    font-size: 1.2em;
+    font-family: "Red Hat Text", sans-serif !important;
+    font-weight: 300;
+}
+
+.figure-caption {
+    color: black !important;
+}
+
+.no-underline {
+    text-decoration: none !important;
+}
+
+/* --------
+Containers & Spacing
+-------- */
+
+.p-content {
+    width: 90%;
+    margin-top: 1.2rem !important;
+    margin: auto;
+    padding: 6% 8% 2% 8%;
+    background-color: #f9f1ff;
+    border-radius: 0.7rem;
+}
+
+.header {
+    background: url("https://i1.lensdump.com/i/g6XYA2.jpg") fixed;
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.header-text-fit {
+    width: fit-content;
+    display: table;
+    margin: auto;
+}
+
+.header-text-bg {
+    background-color: rgba(32, 25, 20, 0.493);
+    width: fit-content;
+    display: table;
+    margin: auto;
+    padding: 1em;
+}
+
+.jumbotron-transparent {
+    background-color: rgba(19, 25, 37, 0);
+    border-radius: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    padding-left: 1rem;
+    padding: 2rem;
+}
+
+.pr-6 {
+    padding-right: 5rem !important;
+}
+
+.pt-6 {
+    padding-top: 12rem !important;
+}
+
+
+/* -------
+Other content
+------- */
+
+#rps-reset {
+    display: none;
+    transition: display 0.3s;
+}
+
+hr {
+    width: 95%;
+    margin: auto;
+}
+
+/* ------------
+Navbar
+------------ */
+
+.navbar-brand {
+    font-weight: 300;
+    padding-top: 2px !important;
+}
+
+.nav-item {
+    font-weight: 200;
+    font-size: 1.1rem !important;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-transgrey {
+    background-color: rgba(29, 14, 12, 0.74);
+}
+
+.navbar-brand {
+    font-size: 1.4rem !important;
+}
+
+.nav-hover-underline {
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 400ms;
+    position: relative;
+}
+
+.nav-hover-underline::after {
+  position: absolute;
+  content: "";
+  background: white;
+  height: .05rem;
+  width: 100%;
+  top: 90%;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+  display: block;
+} 
+
+.nav-hover-underline:hover::after {
+  transform: scaleX(1);
+}
+
+.dropdown-menu.show {
+    background-color: rgba(31, 17, 15, 0.61);
+}
+
+.dropdown-item {
+    color: white;
+    font-weight: 200;
+}
+
+.dropdown-item:hover {
+    background-color:rgba(105, 86, 82, 0.61);
+    color: white;
+}
+
+.dropdown-item.active {
+    background-color: rgba(136, 108, 104, 0.726)
+}
+
+.height-250-px {
+    height: 250px;
+}

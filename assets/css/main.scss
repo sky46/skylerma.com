@@ -1,0 +1,425 @@
+// #########################################################
+
+// General
+
+// ######################################################
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(27, 22, 34);
+    font-family: "Red Hat Text", sans-serif;
+    color: rgb(233, 232, 255);
+    font-size: 1.3rem;
+    @media screen and (max-width: 800px) {
+        font-size: 1.1rem;
+    }
+}
+
+main {
+    margin: 8rem 10% 3rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+    p {
+        line-height: 150%;
+        @media screen and (max-width: 800px) {
+            line-height: 170%;
+        }
+    }
+
+.section-heading {
+    font-weight: 500;
+}
+
+
+// #########################################################
+
+// Navbar
+
+// ######################################################
+
+.navbar {
+    padding: 1.2rem 2.5rem;
+    font-family: "Fira Code", monospace;
+    background-color: rgb(21, 16, 26);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
+}
+
+.nav-link, .nav-title, .nav-links-div {
+    display: inline;
+}
+
+.nav-link, .nav-title {
+    text-decoration: none;
+}
+
+.nav-title {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 0.2rem 0.5rem;
+    margin-right: 1.3rem;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        background: none;
+        color:rgb(187, 224, 255);
+     }
+
+    background: linear-gradient(to right, rgb(215, 155, 255), rgb(136, 207, 255), rgb(215, 155, 255));
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    border: 2px solid transparent;
+
+    &:hover {
+        animation: textHover 1.5s linear infinite;
+        border-image: linear-gradient(to bottom right, rgb(209, 139, 255), rgb(109, 185, 255)) 1;
+    }
+
+    @keyframes textHover {
+        to {
+            background-position: 200%;
+        }
+    }
+}
+
+.nav-link {
+    padding: 0.2rem 0.5rem;
+    font-size: 1.3rem;
+    vertical-align: 15%;
+    
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        background: none;
+        color:rgb(227, 220, 255);
+    }
+
+    background: linear-gradient(rgb(173, 255, 234), rgb(194, 233, 255), rgb(176, 190, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    border: 2px solid transparent;
+
+    &.active {
+        border-image: linear-gradient(to bottom right, rgb(71, 89, 122), rgb(85, 62, 98)) 1;
+    }
+    &:hover {
+        border-image: linear-gradient(rgb(173, 255, 234), rgb(194, 233, 255), rgb(176, 190, 255)) 1;
+    }
+}
+
+
+// #########################################################
+
+// Responsive Navbar
+
+// ######################################################
+
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: 2px transparent;
+    cursor: pointer;
+    margin: 0.2rem;
+    border: 2px solid transparent;
+}
+
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        transition: max-height 0.8s ease;
+    }
+    .nav-title {
+        display: block;
+        width: fit-content;
+    }
+    .nav-link {
+        display: block;
+        margin: 0.1rem;
+        margin-top: 0.4rem;
+        border: 2px solid rgb(27, 27, 58);
+    }
+    .nav-links-div {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.8s ease;
+    }
+    .nav-responsive-show {
+        max-height: 50rem;
+        .nav-links-div {
+            max-height: 17rem;
+        }
+    }
+    .nav-toggle {
+        float: right;
+        display: block;
+        border: 2px solid rgb(27,27,58);
+        &:hover {
+            border-image: linear-gradient(to bottom right, rgb(243, 219, 255), rgb(200, 211, 255), rgb(188, 255, 255)) 1;
+        }
+    }
+}
+
+
+// #########################################################
+
+// Footer
+
+// ######################################################
+
+.footer-div {
+    padding: 1.2rem;
+    text-align: center;
+    background-color: rgb(21, 16, 26);
+}
+
+.footer-text {
+    color: hsl(243, 25%, 80%);
+    font-size: 85%;
+}
+
+
+// #########################################################
+
+// Index Body Content
+
+// ######################################################
+
+.intro-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.intro-heading {
+    font-size: 8rem;
+    font-weight: 400;
+    margin: 0;
+    line-height: 110%;
+    background: linear-gradient(to bottom right, rgb(255, 158, 103), rgb(240, 165, 255) 40%, rgb(1, 200, 255) 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+.intro-text-div {
+    flex-basis: 49%;
+    padding-top: 2rem;
+}
+
+.intro-img {
+    flex-basis: 45%;
+    padding-top: 2rem;
+    > figure {
+        > img {
+            width: 100%;
+        }
+        > figcaption {
+            margin-top: 0.5rem;
+            text-align: center;
+            font-style: italic;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .intro-text-div, .intro-img {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .intro-title {
+        font-size: 5rem;
+    }
+    .intro-text {
+        font-size: 1.5rem;
+    }
+    .intro-text-div {
+        padding-top: 1rem;
+        width: 95%;
+    }
+}
+
+
+// #########################################################
+
+// Topic Pages (About, Music, Projects)
+
+// ######################################################
+
+.topic-heading-div {
+    padding: 5%;
+    margin-bottom: 3rem;
+    background-color: rgb(31,28,44);
+}
+
+.topic-heading {
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+}
+
+.topic-subheading {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1200px) {
+    .topic-heading-div {
+        padding: 8%;
+    }
+    .topic-heading {
+        font-size: 4rem;
+        line-height: 110%;
+    }
+    .topic-subheading {
+        font-size: 1.7rem;
+        line-height: 150%;
+    }
+}
+    
+@media screen and (max-width: 1000px) {
+    .topic-heading {
+        font-size: 3.2rem;
+        line-height: 110%;
+    }
+    .topic-subheading {
+        font-size: 1.5rem;
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .topic-heading {
+        font-size: 4rem;
+        line-height: 110%;
+    }
+    .topic-subheading {
+        font-size: 1.5rem;
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topic-heading-div {
+        padding: 12%;
+    }
+    .topic-heading {
+        font-size: 3rem;
+    }
+    .topic-subheading {
+        font-size: 1.2rem;
+    }
+}
+
+// #########################################################
+
+// About
+
+// ######################################################
+
+.about-heading {
+    background: linear-gradient(rgb(197, 158, 255), rgb(164, 205, 255), rgb(158, 255, 181));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// .video-games-div {
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+
+// .video-games-list {
+//     list-style: none;
+// }
+
+// .video-game-box {
+//     border: 2px solid white;
+//     flex-basis: 33%;
+//     text-align: center;
+// }
+
+
+// #########################################################
+
+// Music
+
+// ######################################################
+
+.music-heading {
+    background: linear-gradient(rgb(161, 158, 255), rgb(255, 164, 202), rgb(255, 228, 158));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.music-recordings-div {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1000px) {
+    .music-recordings-div {
+        flex-direction: column;
+    }
+}
+
+.music-video-div {
+    flex-grow: 1;
+    display: flex;
+}
+
+.music-video {
+    flex-grow: 1;
+    aspect-ratio: 16 / 9;
+}
+
+
+// #########################################################
+
+// Material Icons
+
+// ######################################################
+
+.material-icons {
+    /* Rules for sizing the icon. */
+    &.md-18 { font-size: 18px; }
+    &.md-24 { font-size: 24px; }
+    &.md-36 { font-size: 36px; }
+    &.md-48 { font-size: 48px; }
+
+    /* Rules for using icons as black on a light background. */
+    &.md-dark { color: rgba(0, 0, 0, 0.54); }
+    &.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+    /* Rules for using icons as white on a dark background. */
+    &.md-light { color: rgba(255, 255, 255, 1); }
+    &.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+    &.md-toggle {
+        background: linear-gradient(to bottom right, rgb(243, 219, 255), rgb(200, 211, 255), rgb(188, 255, 255));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
