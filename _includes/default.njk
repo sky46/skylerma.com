@@ -14,11 +14,6 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'">
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'">
 
     <noscript>
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +22,6 @@
         href="https://fonts.gstatic.com"
         crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">
     </noscript>
 
     <link
@@ -59,17 +53,13 @@
   </head>
 
   <body>
-    <nav class="navbar" id="navbar">
-      <button class="nav-toggle" id="nav-toggle">
-        <span class="material-icons md-toggle md-36">menu</span>
-      </button>
-      
+    <nav class="navbar" id="navbar">      
       <a class="nav-title" href="/">Skyler</a>
       <div class="nav-links-div">
-        <a class="nav-link{% if name == 'index' %} active{% endif %}" href="/">Home</a>
-        <a class="nav-link nav-middle-left" download href="/assets/media/Skyler_Ma's_Resume_20230222.pdf">Résumé</a>
-        <a class="nav-link{% if name == 'about' %} active{% endif %} nav-middle-right" href="/about/">About</a>
-        <a class="nav-link{% if name == 'music' %} active{% endif %}" href="/music/">Music</a>
+        <a class="nav-link{% if name == 'index' %} active{% endif %}" href="/">Home</a><!--Remove whitespace between links
+        --><a class="nav-link nav-middle-left" download href="/assets/media/Skyler_Ma's_Resume_20230222.pdf">Résumé</a><!--
+        --><a class="nav-link{% if name == 'about' %} active{% endif %} nav-middle-right" href="/about/">About</a><!--
+        --><a class="nav-link{% if name == 'music' %} active{% endif %}" href="/music/">Music</a>
       </div>
     </nav>
 
