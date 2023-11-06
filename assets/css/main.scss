@@ -24,8 +24,13 @@ body {
     height: 100%;
 }
 
+
+
 main {
-    margin: 8rem 10% 3rem;
+    margin: 6.5rem 10% 3rem;
+    @media screen and (max-width: 64rem) {
+        margin-top: 10rem;
+    }
     flex: 1; // Bottom footer
 }
 
@@ -212,11 +217,12 @@ p {
 .intro-div {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 2%;
 }
 
 .intro-heading {
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 400;
     margin: 0;
     line-height: 110%;
