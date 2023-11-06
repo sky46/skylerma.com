@@ -4,6 +4,10 @@
 
 // ######################################################
 
+html {
+    height: 100%; // Bottom footer
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -14,10 +18,15 @@ body {
     @media screen and (max-width: 48rem) {
         font-size: 1.1rem;
     }
+    // Make footer at bottom of page even if content is too short
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 main {
     margin: 8rem 10% 3rem;
+    flex: 1; // Bottom footer
 }
 
 h1, h2, h3, h4, h5, h6 {
