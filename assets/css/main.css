@@ -1,10 +1,17 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: rgb(27, 22, 34);
-  font-family: "Red Hat Text", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: rgb(233, 232, 255);
   font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 @media screen and (max-width: 48rem) {
   body {
@@ -13,7 +20,13 @@ body {
 }
 
 main {
-  margin: 8rem 10% 3rem;
+  margin: 6.5rem 10% 3rem;
+  flex: 1;
+}
+@media screen and (max-width: 64rem) {
+  main {
+    margin-top: 10rem;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,7 +43,7 @@ p {
 }
 
 .section-heading {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .navbar {
@@ -56,7 +69,7 @@ p {
   margin: 0 auto;
   z-index: 10;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 400;
   padding: 0.3rem 0.7rem;
   background: linear-gradient(to right, rgb(215, 155, 255), rgb(136, 207, 255), rgb(215, 155, 255));
   background-size: 200%;
@@ -168,11 +181,12 @@ p {
 .intro-div {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 2%;
 }
 
 .intro-heading {
-  font-size: 8rem;
+  font-size: 7rem;
   font-weight: 400;
   margin: 0;
   line-height: 110%;
@@ -230,7 +244,7 @@ p {
 
 .topic-heading {
   font-size: 5rem;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 0.7rem;
 }
 
