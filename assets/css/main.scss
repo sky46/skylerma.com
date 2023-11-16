@@ -153,13 +153,19 @@ p {
 }
 
 @media screen and (max-width: 64rem) {
+    .navbar {
+        padding: 0.75rem;
+    }
     .nav-links-div {
         position: static;
         display: block;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
+    }
+    .nav-title {
+        font-size: 1.4rem;
     }
     .nav-link {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin: 0 0.25rem;
     }
 }
@@ -167,10 +173,9 @@ p {
 @media screen and (max-width: 30rem) {
     .nav-link {
         margin: 0;
-        font-size: 1rem;
     }
-    .navbar {
-        padding: 1.2rem 1.5rem;
+    .nav-title {
+        font-size: 1.25rem;
     }
 }
 
