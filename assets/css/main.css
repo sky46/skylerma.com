@@ -8,7 +8,6 @@ body {
   background-color: rgb(27, 22, 34);
   font-family: "Poppins", sans-serif;
   color: rgb(233, 232, 255);
-  font-size: 1.3rem;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -186,18 +185,19 @@ p {
 
 .topic-heading-div {
   padding: 5%;
+  margin-top: 2rem;
   margin-bottom: 3rem;
   background-color: rgb(31, 28, 44);
 }
 
 .topic-heading {
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-weight: 400;
   margin-bottom: 0.7rem;
 }
 
 .topic-subheading {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -279,6 +279,9 @@ p {
   .intro-img-caption {
     font-size: 1rem;
   }
+  .topic-heading-div {
+    margin-top: 0;
+  }
   .topic-heading {
     font-size: 3.2rem;
     line-height: 110%;
@@ -299,11 +302,11 @@ p {
     flex-basis: 100%;
   }
   .topic-heading {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 110%;
   }
   .topic-subheading {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 150%;
   }
 }
@@ -312,7 +315,7 @@ p {
     padding: 12%;
   }
   .topic-heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .topic-subheading {
     font-size: 1.2rem;
