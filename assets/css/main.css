@@ -20,12 +20,12 @@ body {
 }
 
 main {
-  margin: 6.5rem 10% 3rem;
+  margin: 6rem 10% 3rem;
   flex: 1;
 }
 @media screen and (max-width: 64rem) {
   main {
-    margin-top: 10rem;
+    margin-top: 8rem;
   }
 }
 
@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   line-height: 150%;
 }
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 64rem) {
   p {
     line-height: 170%;
   }
@@ -139,23 +139,28 @@ p {
 }
 
 @media screen and (max-width: 64rem) {
+  .navbar {
+    padding: 0.75rem;
+  }
   .nav-links-div {
     position: static;
     display: block;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+  }
+  .nav-title {
+    font-size: 1.4rem;
   }
   .nav-link {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0 0.25rem;
   }
 }
 @media screen and (max-width: 30rem) {
   .nav-link {
     margin: 0;
-    font-size: 1rem;
   }
-  .navbar {
-    padding: 1.2rem 1.5rem;
+  .nav-title {
+    font-size: 1.25rem;
   }
 }
 .nav-toggle {
@@ -182,11 +187,10 @@ p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 2%;
 }
 
 .intro-heading {
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: 400;
   margin: 0;
   line-height: 110%;
@@ -197,43 +201,48 @@ p {
 }
 
 .intro-text {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 1.5rem;
 }
 
 .intro-text-div {
-  flex-basis: 49%;
-  padding-top: 2rem;
+  flex-basis: 55%;
+  padding-top: 1rem;
+}
+
+.intro-img-div {
+  flex-basis: 45%;
 }
 
 .intro-img {
-  flex-basis: 45%;
-  padding-top: 2rem;
-}
-.intro-img > figure > img {
   width: 100%;
 }
-.intro-img > figure > figcaption {
+
+.intro-img-caption {
   margin-top: 0.5rem;
   text-align: center;
   font-style: italic;
 }
 
-@media screen and (max-width: 48rem) {
-  .intro-text-div, .intro-img {
-    flex-basis: 100%;
+@media screen and (max-width: 75rem) {
+  .intro-heading {
+    font-size: 5rem;
   }
 }
 @media screen and (max-width: 64rem) {
-  .intro-title {
-    font-size: 5rem;
+  .intro-heading {
+    font-size: 4rem;
   }
   .intro-text {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
-  .intro-text-div {
-    padding-top: 1rem;
-    width: 95%;
+  .intro-img-caption {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .intro-text-div, .intro-img-div {
+    flex-basis: 100%;
   }
 }
 .topic-heading-div {
