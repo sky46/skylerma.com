@@ -236,6 +236,7 @@ p {
 
 .topic-heading-div {
     padding: 5%;
+    margin-top: 2rem;
     margin-bottom: 3rem;
     background-color: rgb(31,28,44);
 }
@@ -278,7 +279,6 @@ p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 
 .music-recordings-div {
     display: flex;
@@ -355,6 +355,9 @@ p {
         font-size: 1rem;
     }
 
+    .topic-heading-div {
+        margin-top: 0;
+    }
     .topic-heading {
         font-size: 3.2rem;
         line-height: 110%;
