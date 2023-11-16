@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     line-height: 150%;
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: 64rem) {
         line-height: 170%;
     }
 }
@@ -218,11 +218,10 @@ p {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 2%;
 }
 
 .intro-heading {
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: 400;
     margin: 0;
     line-height: 110%;
@@ -233,48 +232,54 @@ p {
 }
 
 .intro-text {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 1.5rem;
 }
 
 .intro-text-div {
-    flex-basis: 49%;
+    flex-basis: 55%;
+    padding-top: 1rem;
+}
+
+.intro-img-div {
+    flex-basis: 45%;
     padding-top: 2rem;
 }
 
 .intro-img {
-    flex-basis: 45%;
-    padding-top: 2rem;
-    > figure {
-        > img {
-            width: 100%;
-        }
-        > figcaption {
-            margin-top: 0.5rem;
-            text-align: center;
-            font-style: italic;
-        }
-    }
+    width: 100%;
 }
 
-@media screen and (max-width: 48rem) {
-    .intro-text-div, .intro-img {
-        flex-basis: 100%;
+.intro-img-caption {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-style: italic;
+}
+
+@media screen and (max-width: 75rem) {
+    .intro-heading {
+        font-size: 5rem;
     }
 }
 
 @media screen and (max-width: 64rem) {
-    .intro-title {
-        font-size: 5rem;
+    .intro-heading {
+        font-size: 4rem;
     }
     .intro-text {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
-    .intro-text-div {
-        padding-top: 1rem;
-        width: 95%;
+    .intro-img-caption {
+        font-size: 1rem;
     }
 }
+
+@media screen and (max-width: 48rem) {
+    .intro-text-div, .intro-img-div {
+        flex-basis: 100%;
+    }
+}
+
 
 
 // #########################################################
