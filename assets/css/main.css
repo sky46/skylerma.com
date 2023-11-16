@@ -13,20 +13,10 @@ body {
   flex-direction: column;
   height: 100%;
 }
-@media screen and (max-width: 48rem) {
-  body {
-    font-size: 1.1rem;
-  }
-}
 
 main {
   margin: 6rem 10% 3rem;
   flex: 1;
-}
-@media screen and (max-width: 64rem) {
-  main {
-    margin-top: 8rem;
-  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,11 +25,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   line-height: 150%;
-}
-@media screen and (max-width: 64rem) {
-  p {
-    line-height: 170%;
-  }
 }
 
 .section-heading {
@@ -138,31 +123,6 @@ p {
   display: inline-block;
 }
 
-@media screen and (max-width: 64rem) {
-  .navbar {
-    padding: 0.75rem;
-  }
-  .nav-links-div {
-    position: static;
-    display: block;
-    margin-top: 0.5rem;
-  }
-  .nav-title {
-    font-size: 1.4rem;
-  }
-  .nav-link {
-    font-size: 1rem;
-    margin: 0 0.25rem;
-  }
-}
-@media screen and (max-width: 30rem) {
-  .nav-link {
-    margin: 0;
-  }
-  .nav-title {
-    font-size: 1.25rem;
-  }
-}
 .nav-toggle {
   display: none;
   background: transparent;
@@ -224,27 +184,6 @@ p {
   font-style: italic;
 }
 
-@media screen and (max-width: 75rem) {
-  .intro-heading {
-    font-size: 5rem;
-  }
-}
-@media screen and (max-width: 64rem) {
-  .intro-heading {
-    font-size: 4rem;
-  }
-  .intro-text {
-    font-size: 1.25rem;
-  }
-  .intro-img-caption {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 48rem) {
-  .intro-text-div, .intro-img-div {
-    flex-basis: 100%;
-  }
-}
 .topic-heading-div {
   padding: 5%;
   margin-bottom: 3rem;
@@ -262,50 +201,6 @@ p {
   font-weight: 400;
 }
 
-@media screen and (max-width: 75rem) {
-  .topic-heading-div {
-    padding: 8%;
-  }
-  .topic-heading {
-    font-size: 4rem;
-    line-height: 110%;
-  }
-  .topic-subheading {
-    font-size: 1.7rem;
-    line-height: 150%;
-  }
-}
-@media screen and (max-width: 64rem) {
-  .topic-heading {
-    font-size: 3.2rem;
-    line-height: 110%;
-  }
-  .topic-subheading {
-    font-size: 1.5rem;
-    line-height: 150%;
-  }
-}
-@media screen and (max-width: 48rem) {
-  .topic-heading {
-    font-size: 4rem;
-    line-height: 110%;
-  }
-  .topic-subheading {
-    font-size: 1.5rem;
-    line-height: 150%;
-  }
-}
-@media screen and (max-width: 36rem) {
-  .topic-heading-div {
-    padding: 12%;
-  }
-  .topic-heading {
-    font-size: 3rem;
-  }
-  .topic-subheading {
-    font-size: 1.2rem;
-  }
-}
 .about-heading {
   background: linear-gradient(rgb(197, 158, 255), rgb(164, 205, 255), rgb(158, 255, 181));
   background-clip: text;
@@ -327,11 +222,6 @@ p {
   flex-direction: row;
 }
 
-@media screen and (max-width: 64rem) {
-  .music-recordings-div {
-    flex-direction: column;
-  }
-}
 .music-video-div {
   flex-grow: 1;
   display: flex;
@@ -340,4 +230,99 @@ p {
 .music-video {
   flex-grow: 1;
   aspect-ratio: 16/9;
+}
+
+@media screen and (max-width: 75rem) {
+  .intro-heading {
+    font-size: 5rem;
+  }
+  .topic-heading-div {
+    padding: 8%;
+  }
+  .topic-heading {
+    font-size: 4rem;
+    line-height: 110%;
+  }
+  .topic-subheading {
+    font-size: 1.7rem;
+    line-height: 150%;
+  }
+}
+@media screen and (max-width: 64rem) {
+  main {
+    margin-top: 8rem;
+  }
+  p {
+    line-height: 170%;
+  }
+  .navbar {
+    padding: 0.75rem;
+  }
+  .nav-links-div {
+    position: static;
+    display: block;
+    margin-top: 0.5rem;
+  }
+  .nav-title {
+    font-size: 1.4rem;
+  }
+  .nav-link {
+    font-size: 1rem;
+    margin: 0 0.25rem;
+  }
+  .intro-heading {
+    font-size: 4rem;
+  }
+  .intro-text {
+    font-size: 1.25rem;
+  }
+  .intro-img-caption {
+    font-size: 1rem;
+  }
+  .topic-heading {
+    font-size: 3.2rem;
+    line-height: 110%;
+  }
+  .topic-subheading {
+    font-size: 1.5rem;
+    line-height: 150%;
+  }
+  .music-recordings-div {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 48rem) {
+  body {
+    font-size: 1.1rem;
+  }
+  .intro-text-div, .intro-img-div {
+    flex-basis: 100%;
+  }
+  .topic-heading {
+    font-size: 4rem;
+    line-height: 110%;
+  }
+  .topic-subheading {
+    font-size: 1.5rem;
+    line-height: 150%;
+  }
+}
+@media screen and (max-width: 36rem) {
+  .topic-heading-div {
+    padding: 12%;
+  }
+  .topic-heading {
+    font-size: 3rem;
+  }
+  .topic-subheading {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 30rem) {
+  .nav-link {
+    margin: 0;
+  }
+  .nav-title {
+    font-size: 1.25rem;
+  }
 }
