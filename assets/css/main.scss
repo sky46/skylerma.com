@@ -4,6 +4,16 @@
 
 // ######################################################
 
+@font-face {
+    font-family: "Fira Code";
+    src: url("/assets/fonts/fira-code/FiraCode-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url("/assets/fonts/figtree/Figtree-Regular.woff2") format("woff2");
+}
+
 html {
     height: 100%; // Bottom footer
 }
@@ -12,7 +22,7 @@ body {
     margin: 0;
     padding: 0;
     background-color:rgb(27, 22, 34);
-    font-family: "Poppins", sans-serif;
+    font-family: sans-serif;
     color: rgb(233, 232, 255);
     // Make footer at bottom of page even if content is too short
     display: flex;
@@ -20,7 +30,9 @@ body {
     height: 100%;
 }
 
-
+.fonts-loaded body {
+    font-family: "Figtree", sans-serif;
+}
 
 main {
     margin: 6rem 10% 3rem;
@@ -49,13 +61,17 @@ p {
 
 .navbar {
     padding: 1.2rem 2.5rem;
-    font-family: "Fira Code", monospace;
+    font-family: monospace;
     background-color: rgb(21, 16, 26);
     overflow: hidden;
     position: fixed;
     width: 100%;
     box-sizing: border-box;
     top: 0;
+}
+
+.fonts-loaded .navbar {
+    font-family: "Fira Code", monospace;
 }
 
 .nav-link, .nav-title {
