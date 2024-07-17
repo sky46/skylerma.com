@@ -243,7 +243,7 @@ p {
 
 // #########################################################
 
-// Topic Pages (About, Music, Projects)
+// Topic Pages (Music, Projects)
 
 // ######################################################
 
@@ -263,20 +263,6 @@ p {
 .topic-subheading {
     font-size: 1.5rem;
     font-weight: 400;
-}
-
-
-// #########################################################
-
-// About
-
-// ######################################################
-
-.about-heading {
-    background: linear-gradient(rgb(197, 158, 255), rgb(164, 205, 255), rgb(158, 255, 181));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 
@@ -308,6 +294,20 @@ p {
 .music-video {
     flex-grow: 1;
     aspect-ratio: 16 / 9;
+}
+
+
+// #########################################################
+
+// Projects
+
+// ######################################################
+
+.projects-heading {
+    background: linear-gradient(rgb(197, 158, 255), rgb(164, 205, 255), rgb(158, 255, 181));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
