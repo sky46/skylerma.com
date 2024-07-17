@@ -318,16 +318,19 @@ p {
 
 // ######################################################
 
-@media screen and (max-width: 75rem) {
-    main {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
+@media screen and (max-width: 100rem) {
     .intro-heading {
         font-size: 4rem;
     }
     .intro-text {
         font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 75rem) {
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .topic-heading-div {
         padding: 8%;
