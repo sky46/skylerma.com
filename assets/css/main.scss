@@ -354,17 +354,14 @@ p {
     .navbar {
         padding: 12px;
     }
-    .nav-links-div {
-        position: static;
-        display: block;
-        margin-top: 8px;
-    }
     .nav-title {
         font-size: 1.4rem;
     }
+    .nav-links-div {
+        top: 18px;
+    }
     .nav-link {
         font-size: 1rem;
-        margin: 0 4px;
     }
 
     .intro-heading {
@@ -394,6 +391,14 @@ p {
 }
 
 @media screen and (max-width: 48rem) {
+    .nav-links-div {
+        position: static;
+        display: block;
+        margin-top: 8px;
+    }
+    .nav-link {
+        margin: 0 4px;
+    }
     .intro-div {
         display: block;
     }
