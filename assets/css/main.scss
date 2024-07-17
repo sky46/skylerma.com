@@ -63,7 +63,6 @@ p {
     padding: 20px 40px;
     font-family: monospace;
     background-color: rgb(21, 16, 26);
-    overflow: hidden;
     position: fixed;
     width: 100%;
     box-sizing: border-box;
@@ -398,13 +397,28 @@ p {
 }
 
 @media screen and (max-width: 48rem) {
+    html {
+        font-size: 90%;
+    }
+    main {
+        margin-top: 0;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .navbar {
+        padding-left: 0;
+        padding-right: 0;
+        position: static;
+    }
     .nav-links-div {
         position: static;
         display: block;
         margin-top: 8px;
     }
     .nav-link {
-        margin: 0 4px;
+        margin: 0;
+        padding: 3px 5px;
+        border-width: 1.5px;
     }
     .intro-div {
         display: block;
