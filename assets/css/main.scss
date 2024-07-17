@@ -35,8 +35,7 @@ body {
 }
 
 main {
-    margin: 6rem 10% 3rem;
-    
+    margin: 5.8rem 10% 0;
     flex: 1; // Bottom footer
 }
 
@@ -204,6 +203,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    height: 100%;
 }
 
 .intro-heading {
@@ -223,16 +223,17 @@ p {
 }
 
 .intro-text-div {
-    flex-basis: 55%;
+    flex-basis: 60%;
     padding-top: 1rem;
 }
 
 .intro-img-div {
-    flex-basis: 45%;
+    flex-basis: 40%;
+    text-align: right;
 }
 
 .intro-img {
-    width: 100%;
+    width: 70%;
 }
 
 .intro-img-caption {
