@@ -26,7 +26,8 @@ body {
 }
 
 main {
-  margin: 6rem 10% 3rem;
+  margin: 5.8rem 15% 0;
+  padding: 2rem 0;
   flex: 1;
 }
 
@@ -122,11 +123,11 @@ p {
 }
 
 .nav-middle-left {
-  margin-right: 6rem;
+  margin-right: 3.5rem;
 }
 
 .nav-middle-right {
-  margin-left: 6rem;
+  margin-left: 3.5rem;
 }
 
 .nav-links-div {
@@ -148,27 +149,26 @@ p {
 }
 
 .footer-div {
-  padding: 1.2rem;
+  padding: 0.3rem;
   text-align: center;
-  background-color: rgb(21, 16, 26);
+  background-color: rgb(22, 17, 27);
 }
 
 .footer-text {
-  color: hsl(243, 25%, 80%);
-  font-size: 1.1rem;
+  color: hsl(243, 15%, 60%);
 }
 
 .intro-div {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  height: 100%;
 }
 
 .intro-heading {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 400;
   margin: 0;
-  line-height: 110%;
   background: linear-gradient(to bottom right, rgb(255, 158, 103), rgb(240, 165, 255) 40%, rgb(1, 200, 255) 80%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -176,21 +176,21 @@ p {
 }
 
 .intro-text {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-top: 1.5rem;
 }
 
 .intro-text-div {
-  flex-basis: 55%;
+  flex-basis: 60%;
   padding-top: 1rem;
 }
 
 .intro-img-div {
-  flex-basis: 45%;
+  flex-basis: 40%;
 }
 
 .intro-img {
-  width: 100%;
+  width: 85%;
 }
 
 .intro-img-caption {
@@ -248,9 +248,18 @@ p {
   aspect-ratio: 16/9;
 }
 
-@media screen and (max-width: 75rem) {
+@media screen and (max-width: 100rem) {
   .intro-heading {
-    font-size: 5rem;
+    font-size: 4rem;
+  }
+  .intro-text {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 75rem) {
+  main {
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .topic-heading-div {
     padding: 8%;
@@ -266,7 +275,7 @@ p {
 }
 @media screen and (max-width: 64rem) {
   main {
-    margin-top: 8rem;
+    margin: 8rem 10% 0;
   }
   p {
     line-height: 170%;
@@ -290,7 +299,7 @@ p {
     font-size: 4rem;
   }
   .intro-text {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
   .intro-img-caption {
     font-size: 1rem;
@@ -311,11 +320,21 @@ p {
   }
 }
 @media screen and (max-width: 48rem) {
-  body {
-    font-size: 1.1rem;
+  .intro-div {
+    display: block;
   }
-  .intro-text-div, .intro-img-div {
-    flex-basis: 100%;
+  .intro-text-div {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .intro-heading {
+    font-size: 2.5rem;
+  }
+  .intro-img-div {
+    text-align: center;
+  }
+  .intro-img {
+    width: 90%;
   }
   .topic-heading {
     font-size: 3rem;
