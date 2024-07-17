@@ -6,7 +6,22 @@ name: index
 
 <div class="intro-div">
   <div class="intro-img-div">
-    <img class="intro-img" src="assets/media/img/portrait.jpg" alt="Picture of Skyler">
+    <img
+      class="intro-img"
+      srcset="
+        assets/media/img/portrait-600x800.jpg 600w,
+        assets/media/img/portrait-480x640.jpg 480w,
+        assets/media/img/portrait-300x400.jpg 300w
+      "
+      sizes="
+        (max-width: 36rem) 480px,
+        (max-width: 48rem) 600px,
+        (max-width: 64rem) 300px,
+        (max-width: 100rem) 480px,
+        600px
+      "
+      src="assets/media/img/portrait-600x800.jpg"
+      alt="Picture of Skyler">
   </div>
 
   <div class="intro-text-div">
