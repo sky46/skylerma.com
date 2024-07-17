@@ -35,8 +35,8 @@ body {
 }
 
 main {
-    margin: 5.8rem 15% 0;
-    padding: 2rem 0;
+    margin: 92px 15% 0;
+    padding: 32px 0;
     flex: 1; // Bottom footer
 }
 
@@ -60,7 +60,7 @@ p {
 // ######################################################
 
 .navbar {
-    padding: 1.2rem 2.5rem;
+    padding: 20px 40px;
     font-family: monospace;
     background-color: rgb(21, 16, 26);
     overflow: hidden;
@@ -87,7 +87,7 @@ p {
     z-index: 10;
     font-size: 2rem;
     font-weight: 400;
-    padding: 0.3rem 0.7rem;
+    padding: 4px 10px;
 
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         background: none;
@@ -100,7 +100,7 @@ p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    border: 0.125rem solid hsl(250, 40%, 30%);
+    border: 2px solid hsl(250, 40%, 30%);
     border-image: linear-gradient(to bottom right, hsl(276, 40%, 40%), hsl(209, 40%, 40%)) 1;
 
     &:hover {
@@ -118,8 +118,8 @@ p {
 
 .nav-link {
     display: inline-block;
-    padding: 0.2rem 0.5rem;
-    margin: 0 0.5rem;
+    padding: 5px 8px;
+    margin: 0 6px;
     font-size: 1.3rem;
     vertical-align: 5%;
     
@@ -133,7 +133,7 @@ p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
-    border: 0.125rem solid transparent;
+    border: 2px solid transparent;
 
     &.active {
         border-image: linear-gradient(to bottom right, rgb(71, 89, 122), rgb(85, 62, 98)) 1;
@@ -153,9 +153,9 @@ p {
 .nav-links-div {
     text-align: center;
     position: absolute;
-    left: 10rem;
-    right: 10rem;
-    top: 2rem;
+    left: 160px;
+    right: 160px;
+    top: 32px;
     display: inline-block;
 }
 
@@ -169,10 +169,10 @@ p {
 .nav-toggle {
     display: none;
     background: transparent;
-    border: 0.125rem transparent;
+    border: 2px transparent;
     cursor: pointer;
-    margin: 0.2rem;
-    border: 0.125rem solid transparent;
+    margin: 3px;
+    border: 2px solid transparent;
 }
 
 
@@ -183,7 +183,7 @@ p {
 // ######################################################
 
 .footer-div {
-    padding: 0.3rem;
+    padding: 5px;
     text-align: center;
     background-color: rgb(22, 17, 27);
 }
@@ -218,12 +218,12 @@ p {
 
 .intro-subheading{
     font-size: 1.4rem;
-    margin-top: 1.5rem;
+    margin-top: 24px;
 }
 
 .intro-text-div {
     flex-basis: 60%;
-    padding-top: 1rem;
+    padding-top: 16px;
 }
 
 .intro-img-div {
@@ -235,7 +235,7 @@ p {
 }
 
 .intro-img-caption {
-    margin-top: 0.5rem;
+    margin-top: 8px;
     text-align: center;
     font-style: italic;
 }
@@ -249,15 +249,15 @@ p {
 
 .topic-heading-div {
     padding: 5%;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-top: 32px;
+    margin-bottom: 48px;
     background-color: rgb(31,28,44);
 }
 
 .topic-heading {
     font-size: 3.5rem;
     font-weight: 400;
-    margin-bottom: 0.7rem;
+    margin-bottom: 12px;
 }
 
 .topic-subheading {
@@ -295,8 +295,8 @@ p {
 
 .music-recordings-div {
     display: flex;
-    gap: 1rem;
-    padding: 1rem 0;
+    gap: 16px;
+    padding: 16px 0;
     flex-direction: row;
 }
 
@@ -346,26 +346,26 @@ p {
 
 @media screen and (max-width: 64rem) {
     main {
-        margin: 8rem 10% 0;
+        margin: 128px 10% 0;
     }
     p {
         line-height: 170%;
     }
 
     .navbar {
-        padding: 0.75rem;
+        padding: 12px;
     }
     .nav-links-div {
         position: static;
         display: block;
-        margin-top: 0.5rem;
+        margin-top: 8px;
     }
     .nav-title {
         font-size: 1.4rem;
     }
     .nav-link {
         font-size: 1rem;
-        margin: 0 0.25rem;
+        margin: 0 4px;
     }
 
     .intro-heading {
@@ -400,7 +400,7 @@ p {
         display: block;
     }
     .intro-text-div {
-        margin-top: 1rem;
+        margin-top: 16px;
         text-align: center;
     }
     .intro-heading {
