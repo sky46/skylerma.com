@@ -320,8 +320,15 @@ p {
 // ######################################################
 
 @media screen and (max-width: 75rem) {
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
     .intro-heading {
-        font-size: 5rem;
+        font-size: 4rem;
+    }
+    .intro-text {
+        font-size: 1.3rem;
     }
     .topic-heading-div {
         padding: 8%;
@@ -338,7 +345,7 @@ p {
 
 @media screen and (max-width: 64rem) {
     main {
-        margin-top: 8rem;
+        margin: 8rem 10% 0;
     }
     p {
         line-height: 170%;
@@ -364,7 +371,7 @@ p {
         font-size: 4rem;
     }
     .intro-text {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
     }
     .intro-img-caption {
         font-size: 1rem;
@@ -388,12 +395,21 @@ p {
 }
 
 @media screen and (max-width: 48rem) {
-    body {
-        font-size: 1.1rem;
+    .intro-div {
+        display: block;
     }
-
-    .intro-text-div, .intro-img-div {
-        flex-basis: 100%;
+    .intro-text-div {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .intro-heading {
+        font-size: 2.5rem;
+    }
+    .intro-img-div {
+        text-align: center;
+    }
+    .intro-img {
+        width: 90%;
     }
     
     .topic-heading {
