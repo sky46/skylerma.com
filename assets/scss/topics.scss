@@ -1,0 +1,68 @@
+@use 'breakpoints' as *;
+
+// #########################################################
+
+// Topic Pages (Music, Projects)
+
+// ######################################################
+
+.topic-heading {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 16px 0;
+    text-align: center;
+
+    @include respond-to('md') { 
+        font-size: 3rem;
+    }
+}
+
+
+// #########################################################
+
+// Music
+
+// ######################################################
+
+.music-heading {
+    background: linear-gradient(rgb(161, 158, 255), rgb(255, 164, 202), rgb(255, 228, 158));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.music-recordings-div {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+    flex-direction: column;
+
+    @include respond-to('md') {
+        flex-direction: row;
+    }
+}
+
+.music-video-div {
+    flex-grow: 1;
+    display: flex;
+}
+
+.music-video {
+    flex-grow: 1;
+    aspect-ratio: 16 / 9;
+    border-radius: 3px;
+}
+
+
+// #########################################################
+
+// Projects
+
+// ######################################################
+
+.projects-heading {
+    background: linear-gradient(rgb(197, 158, 255), rgb(164, 205, 255), rgb(158, 255, 181));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

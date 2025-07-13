@@ -1,0 +1,264 @@
+@use 'breakpoints' as *;
+
+// #########################################################
+
+// General
+
+// ######################################################
+
+@font-face {
+    font-family: "Fira Code";
+    src: url("/assets/fonts/fira-code/FiraCode-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url("/assets/fonts/figtree/Figtree-Regular.woff2") format("woff2");
+}
+
+html {
+    height: 100%; // Bottom footer
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(27, 22, 34);
+    font-family: sans-serif;
+    color: rgb(233, 232, 255);
+    // Make footer at bottom of page even if content is too short
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.fonts-loaded body {
+    font-family: "Figtree", sans-serif;
+}
+
+main {
+    margin: 0 8%;
+    padding: 24px 0;
+    flex: 1; // Bottom footer
+
+    @include respond-to('md') {
+        margin: 64px 10% 0;
+    }
+
+    @include respond-to('lg') {
+        margin: 92px 15% 0;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    line-height: 150%;
+    font-size: 1.1rem;
+}
+
+a {
+    color: rgb(155, 192, 255);
+    &:hover, &:focus {
+        color: adjust-color($color: rgb(155, 192, 255), $lightness: 5%)
+    }
+    &:active {
+        color: adjust-color($color: rgb(155, 192, 255), $lightness: 10%)
+    }
+}
+
+.section-heading {
+    font-weight: 400;
+}
+
+
+// #########################################################
+
+// Navbar
+
+// ######################################################
+
+.navbar {
+    position: static;
+    padding: 12px 0;
+    font-family: monospace;
+    background-color: rgb(21, 16, 26);
+    width: 100%;
+    box-sizing: border-box;
+
+    @include respond-to('md') {
+        position: fixed;
+        top: 0;
+        padding: 12px;
+    }
+
+    @include respond-to('lg') {
+        padding: 20px 40px;
+    }
+}
+
+.fonts-loaded .navbar {
+    font-family: "Fira Code", monospace;
+}
+
+.nav-link, .nav-title {
+    display: inline;
+    text-decoration: none;
+}
+
+.nav-title {
+    width: min-content;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    z-index: 10;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 4px 10px;
+
+
+    background: linear-gradient(to right, rgb(215, 155, 255), rgb(136, 207, 255), rgb(215, 155, 255));
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    border: 2px solid hsl(250, 40%, 30%);
+    border-image: linear-gradient(to bottom right, hsl(276, 40%, 40%), hsl(209, 40%, 40%)) 1;
+
+    &:hover {
+        animation: textHover 1.5s linear infinite;
+        border-image: linear-gradient(to bottom right, rgb(209, 139, 255), rgb(109, 185, 255)) 1;
+        border-color: rgb(185,175,254);
+    }
+
+    @keyframes textHover {
+        to {
+            background-position: 200%;
+        }
+    }
+
+    // Internet explorer
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        background: none;
+        color:rgb(187, 224, 255);
+    }
+
+    @include respond-to('xs') {
+        font-size: 1.4rem;
+    }
+
+    @include respond-to('lg') {
+        font-size: 2rem;
+    }
+}
+
+.nav-link {
+    display: inline-block;
+    font-size: 1rem;
+    vertical-align: 5%;
+    margin: 0;
+    padding: 3px 5px;
+    border: 1.5px solid transparent;
+
+    background: linear-gradient(rgb(173, 255, 234), rgb(194, 233, 255), rgb(176, 190, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &.active {
+        border-image: linear-gradient(to bottom right, rgb(71, 89, 122), rgb(85, 62, 98)) 1;
+    }
+    &:hover, &:focus {
+        border-image: linear-gradient(rgb(173, 255, 234), rgb(194, 233, 255), rgb(176, 190, 255)) 1;
+    }
+    
+    // Internet explorer
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        background: none;
+        color:rgb(227, 220, 255);
+    }
+
+    @include respond-to('md') {
+        margin: 0 6px;
+        padding: 5px 8px;
+        border-width: 2px;
+    }
+
+    @include respond-to('lg') {
+        font-size: 1.3rem;
+    }
+}
+
+.nav-middle-left {
+    @include respond-to('md') {
+        margin-right: 40px;
+    }
+    @include respond-to('lg') {
+        margin-right: 50px;
+    }
+}
+.nav-middle-right {
+    @include respond-to('md') {
+        margin-left: 40px;
+    }
+    @include respond-to('lg') {
+        margin-left: 50px;
+    }
+}
+
+.nav-links-div {
+    position: static;
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+
+    @include respond-to('md') {
+        position: absolute;
+        display: inline-block;
+        top: 18px;
+        left: 50px;
+        right: 1px;
+        margin-top: 0;
+    }
+
+    @include respond-to('lg') {
+        top: 30px;
+        left: 64px;
+    }
+}
+
+
+// #########################################################
+
+// Responsive Navbar
+
+// ######################################################
+
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: 2px transparent;
+    cursor: pointer;
+    margin: 3px;
+    border: 2px solid transparent;
+}
+
+
+// #########################################################
+
+// Footer
+
+// ######################################################
+
+.footer-div {
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(22, 17, 27);
+}
+
+.footer-text {
+    color: hsl(243, 15%, 60%);
+}

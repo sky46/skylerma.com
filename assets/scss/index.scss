@@ -1,0 +1,78 @@
+@use 'breakpoints' as *;
+
+// #########################################################
+
+// Index Body Content
+
+// ######################################################
+
+.intro-div {
+    display: block;
+    height: 100%;
+
+    @include respond-to('md') {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 5%;
+    }
+}
+
+.intro-highlight {
+    font-weight: 500;
+    margin: 0;
+    background: linear-gradient(to bottom right, rgb(255, 158, 103), rgb(240, 165, 255) 40%, rgb(1, 200, 255) 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-heading {
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-top: 24px;
+    line-height: 150%;
+
+    @include respond-to('md') {
+        font-size: 1.7rem;
+    }
+
+    @include respond-to('lg') {
+        font-size: 2rem;
+    }
+
+    @include respond-to('xl') {
+        font-size: 2.5rem;
+    }
+}
+
+.intro-text-div {
+    text-align: center;
+    flex-basis: 55%;
+    padding-top: 16px;
+}
+
+.intro-img-div {
+    flex-basis: 40%;
+    text-align: center;
+
+    @include respond-to('md') {
+        text-align: right;
+    }
+}
+
+.intro-img {
+    width: 80%;
+    border-radius: 3px;
+
+    @include respond-to('xs') {
+        width: 60%;
+    }
+    @include respond-to('md') {
+        width: 85%;
+    }
+    @include respond-to('xl') {
+        width: 75%;
+    }
+}
+
